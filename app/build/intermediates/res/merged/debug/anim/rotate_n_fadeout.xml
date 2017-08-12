@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/linear_interpolator">
+    <alpha
+        android:duration="2000"
+        android:fromAlpha="1"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:toAlpha="0"
+        />
+    <rotate
+        android:duration="2000"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%"/>
+
+    <scale android:fromXScale="1.0" android:fromYScale="1.0"
+        android:toXScale="0.3" android:toYScale="0.3"
+        android:duration="2000"/>
+
+</set><!-- From: file:/E:/Android_Project/JobSure/app/src/main/res/anim/rotate_n_fadeout.xml -->

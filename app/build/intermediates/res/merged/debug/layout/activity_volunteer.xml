@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.y_knot.volunteer"
+    android:background="@drawable/newbg1_blur1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1.0"
+        >
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#2E3192">
+
+
+            <TextView
+                android:id="@+id/knot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/knot"
+                android:textStyle="normal"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:layout_marginLeft="6dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:gravity="center">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/volImg"
+            android:radius="5dp">
+        </ImageView>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight=".6"
+        android:gravity="center_vertical|center_horizontal">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button8"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:background="@drawable/baby_sitting" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button10"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:background="@drawable/law_help" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button7"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:background="@drawable/ngo" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button9"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:background="@drawable/care" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button11"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:background="@drawable/skills" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button12"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:background="@drawable/study_time" />
+            </GridLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/E:/Android_Project/JobSure/app/src/main/res/layout/activity_volunteer.xml -->

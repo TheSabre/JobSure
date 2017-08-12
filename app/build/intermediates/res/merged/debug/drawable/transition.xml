@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/newbg1" />
+    <item android:drawable="@drawable/newbg1_blur1"/>
+
+</transition><!-- From: file:/E:/Android_Project/JobSure/app/src/main/res/drawable/transition.xml -->

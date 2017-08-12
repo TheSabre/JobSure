@@ -1,0 +1,126 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.y_knot.home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout">
+
+<FrameLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainContent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbg1_blur1"
+    android:id="@+id/mainLayout"
+    >
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#2E3192">
+
+        <TextView
+            android:id="@+id/knot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/knot"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/home"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:id="@+id/homeText"
+                />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="10dp"
+        android:id="@+id/iwanttoLinear"
+        >
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/iwantto"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:id="@+id/iwanttoText"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/iwanttoLinear"
+        android:id="@+id/workLayout"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="1.0"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/workImg"
+            android:background="@drawable/workpress"
+            android:layout_weight=".5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:onClick="goWork"
+            />
+        <Button
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/volImg"
+            android:background="@drawable/volunteerpress"
+            android:layout_weight=".5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:onClick="goVolunteer"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</FrameLayout>
+    <ListView
+    android:id="@+id/navList"
+    android:layout_height="match_parent"
+    android:layout_width="265dp"
+    android:layout_gravity="left"
+    android:background="#ffffff">
+</ListView>
+</android.support.v4.widget.DrawerLayout>

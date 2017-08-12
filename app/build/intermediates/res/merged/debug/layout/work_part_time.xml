@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbg1_blur1"
+     >
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2E3192"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/knot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:text="@string/knot"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/homeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:src="@drawable/home" />
+
+        
+    </LinearLayout>
+    	
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/header"
+       android:gravity="center_horizontal"
+       android:orientation="horizontal">
+       	
+       	<ImageView
+             	android:layout_width="wrap_content"
+             	android:layout_height="wrap_content"
+             	android:id="@+id/slide_images"
+             />
+            
+       	
+   </LinearLayout>
+         
+</RelativeLayout>
+
+<!-- From: file:/E:/Android_Project/JobSure/app/src/main/res/layout/work_part_time.xml -->
